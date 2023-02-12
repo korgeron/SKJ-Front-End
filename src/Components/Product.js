@@ -1,25 +1,41 @@
-import {useEffect,useState} from "react";
+import {useEffect, useState} from "react";
 
 export const Product = () => {
 
-    const [product, setProduct] = useState([])
+    const [products, setProducts] = useState([])
 
-    useEffect(()=>{
+    useEffect(() => {
 
         fetch('http://localhost:8080/skj/products/all-products')
             .then(res => res.json())
-            .then(data => setProduct(data))
+            .then(data => {
+                console.log(data);
+                setProducts(data)
+            })
 
-    },[])
+    }, [])
 
-    console.log(product)
+    console.log(products)
 
     return (
+
         <div className={'product-card'}>
-            <img src={product[3].photo} alt=""/>
-            <h1>{product[3].name}</h1>
-            <p>{product[3].category}</p>
+            {products.map((product) => {
+                return (
+                <div>
+                    <img src={product.photo} alt={product.name}/>
+                    <h1>{product.name}</h1>
+                    <p>{product.category}</p>
+                </div>
+                )
+            })}
         </div>
+
+        // <div className={'product-card'} key={product}>
+        //     <img src={product.photo} alt={product.name}/>
+        //     <h1>{product.name}</h1>
+        //     <p>{product.category}</p>
+        // </div>
     )
 
 }
