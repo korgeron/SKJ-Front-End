@@ -19,10 +19,10 @@ export const Product = () => {
 
     return (
 
-        <div className={'product-card'}>
+        <div>
             {products.map((product) => {
                 return (
-                <div>
+                <div className={'product-card'} key={product.id}>
                     <img src={product.photo} alt={product.name}/>
                     <h1>{product.name}</h1>
                     <p>{product.category}</p>

@@ -1,30 +1,20 @@
-
 import './App.css';
 import './my-css.css'
 import {Product} from "./Components/Product";
 
 function App() {
-  return (
-      <div className={'container'}>
-        <Product />
-      </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+    return (
+        <div className={'page'}>
+
+            <div className={'page-navbar'}>
+
+            </div>
+
+            <div className={'page-content'}>
+                <Product/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
