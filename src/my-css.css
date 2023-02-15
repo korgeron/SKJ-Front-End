@@ -1,9 +1,8 @@
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     height: 100vh;
     width: 100vw;
-
-
 }
 
 .page {
@@ -11,7 +10,7 @@ body {
     width: 100vw;
     display: flex;
     /*flex-direction: column;*/
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
 
     background-image: url("../src/Images/japanese-door(open).png");
@@ -20,18 +19,24 @@ body {
     image-rendering: pixelated;
 }
 
-.page-navbar {
-    margin: 1vh 1vw 1vh 1vw;
-    height: 20vh;
-    width: 95vw;
-    /*background: rgba(0, 0, 0, 0.24);*/
-    /*border: 1px solid rgb(101, 220, 220);*/
+.shelf-navbar {
+    height: 30vh;
+    background-image: url("../src/Images/japanese-shelf(transparent).png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.page-content {
-    height: 80vh;
-    width: 100vw;
+.content-container {
+    margin-top: 6.4vh;
+    height: 90vh;
+    width: 72vw;
+    background: rgba(210, 180, 140, 0.32);
+    overflow-y: scroll;
 
+}
+
+.content-container::-webkit-scrollbar{
+    display: none;
 }
 
 .product-card > img {
@@ -40,29 +45,11 @@ body {
 }
 
 .door-left {
-    margin-top: 2.5vh;
+    margin-top: 6.3vh;
     height: 90vh;
     width: 50vw;
-    position: relative;
+    position: absolute;
     background-image: url("../src/Images/japanese-door(left).png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    image-rendering: pixelated;
-    right: 0;
-
-    animation-name: openLeft;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    transition: all 1s;
-    animation-delay: .5s;
-}
-
-.door-right {
-    margin-top: 2.5vh;
-    height: 90vh;
-    width: 50vw;
-    position: relative;
-    background-image: url("../src/Images/japanese-door(right).png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     image-rendering: pixelated;
@@ -75,21 +62,39 @@ body {
     animation-delay: .5s;
 }
 
+.door-right {
+    margin-top: 6.3vh;
+    height: 90vh;
+    width: 50vw;
+    position: absolute;
+    background-image: url("../src/Images/japanese-door(right).png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    right: 0;
+
+    animation-name: openLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+    animation-delay: .5s;
+}
+
 
 @keyframes openRight {
-    from{
+    from {
         left: 0;
     }
-    to{
-        left: 38%;
+    to {
+        left: -36%;
     }
 }
 
 @keyframes openLeft {
-    from{
+    from {
         right: 0;
     }
-    to{
-        right: 36%;
+    to {
+        right: -36%;
     }
 }
