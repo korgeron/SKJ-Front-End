@@ -1,6 +1,5 @@
 import './App.css';
 import './my-css.css'
-// import {Doors} from "./Components/Doors";
 
 // import {Product} from "./Components/Product";
 
@@ -17,12 +16,12 @@ function App() {
             </div>
 
             {/*<div className={'page-navbar'}>*/}
-            {/*    /!*<Doors />*!/*/}
+
             {/*</div>*/}
 
             {/*<div className={'page-content'}>*/}
             {/*    /!*<Product/>*!/*/}
-            {/*    /!*<Doors />*!/*/}
+
             {/*</div>*/}
         </div>
     );
