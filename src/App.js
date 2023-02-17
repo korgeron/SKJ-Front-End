@@ -1,10 +1,11 @@
 import './App.css';
 import './my-css.css'
-import {Navbar} from "./Components/Navbar";
 import {Home} from "./Pages/Home";
 import {About} from "./Pages/About";
-
+import {PageLoad} from "./Pages/PageLoad";
 // import {Product} from "./Components/Product";
+export default App;
+
 
 function App() {
 
@@ -12,28 +13,20 @@ function App() {
     switch (window.location.pathname) {
         default:
         case "/":
+            document.querySelector("title").innerText = "SKJ | Home"
+            Component = <PageLoad/>
+            break;
+        case "/home":
+            document.querySelector("title").innerText = "SKJ | Home"
             Component = <Home/>
             break;
         case "/about":
+            document.querySelector("title").innerText = "SKJ | About Us"
             Component = <About/>
             break;
     }
 
     return (
-
-        <div className={'page'}>
-            <div className={'door-left'}></div>
-            <div className={'door-right'}></div>
-
-            <div className={'content-container'}>
-                <Navbar/>
-                {Component}
-            </div>
-
-        </div>
-
-
-    );
+       Component
+);
 }
-
-export default App;

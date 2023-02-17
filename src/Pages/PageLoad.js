@@ -1,15 +1,15 @@
 import {Navbar} from "../Components/Navbar";
 
-export const About = () =>{
+export const PageLoad = () => {
     return (
         <div className={'page'}>
-            <div className={'door-left-un-animated'}></div>
-            <div className={'door-right-un-animated'}></div>
+            <div className={'door-left'}></div>
+            <div className={'door-right'}></div>
 
             <div className={'content-container'}>
                 <Navbar/>
                 <div>
-                    THIS IS OUR ABOUT US PAGE! THANKS FOR VIEWING :)
+                    THIS WILL BE THE LANDING PAGE! SAME AS THE HOME PAGE BUT WITH ANIMATION :D
                 </div>
             </div>
         </div>

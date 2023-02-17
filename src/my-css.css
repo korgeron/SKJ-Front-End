@@ -2,6 +2,7 @@
     --levitate: 5vh;
 }
 
+
 body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -99,6 +100,18 @@ body {
     animation-delay: .5s;
 }
 
+.door-left-un-animated{
+    margin-top: 6.3vh;
+    height: 90vh;
+    width: 50vw;
+    position: absolute;
+    background-image: url("../src/Images/japanese-door(left).png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    left: -36%;
+}
+
 .door-right {
     margin-top: 6.3vh;
     height: 90vh;
@@ -115,6 +128,18 @@ body {
     animation-fill-mode: forwards;
     transition: all 1s;
     animation-delay: .5s;
+}
+
+.door-right-un-animated{
+    margin-top: 6.3vh;
+    height: 90vh;
+    width: 50vw;
+    position: absolute;
+    background-image: url("../src/Images/japanese-door(right).png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    right: -36%;
 }
 
 
