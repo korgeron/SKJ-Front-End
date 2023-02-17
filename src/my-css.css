@@ -1,3 +1,7 @@
+:root{
+    --levitate: 5vh;
+}
+
 body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -30,16 +34,31 @@ body {
 }
 
 .nav-skj-logo{
-    height: 10vh;
-    width: 10vw;
+    height: 12vh;
+    width: 15vw;
     background-image: url("../src/Images/japan-vase-skj-logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 3.5vh;
+}
+
+.nav-skj-logo:hover,
+.nav-skj-logo:focus{
+    cursor: pointer;
+    margin-bottom: 6vh;
+}
+
+.nav-about-us{
+    height: 9vh;
+    width: 12vw;
+    background-image: url("../src/Images/about-us-cup(transparent-2).png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 2.5vh;
 }
 
-.nav-skj-logo:hover,
-.nav-skj-logo:focus{
+.nav-about-us:hover,
+.nav-about-us:focus{
     cursor: pointer;
     margin-bottom: 5vh;
 }
@@ -73,7 +92,6 @@ body {
     image-rendering: pixelated;
     left: 0;
 
-    /*animation: ease-in-out;*/
     animation-name: openRight;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -92,7 +110,6 @@ body {
     image-rendering: pixelated;
     right: 0;
 
-    /*animation: ease-in-out;*/
     animation-name: openLeft;
     animation-duration: 2s;
     animation-fill-mode: forwards;

@@ -6,7 +6,7 @@ export const Navbar = () => {
                 <div className={'nav-skj-logo'}></div>
             </a>
             <a href="/about" >
-                <div className={'nav-skj-logo'}></div>
+                <div className={'nav-about-us'}></div>
             </a>
         </div>
     )
