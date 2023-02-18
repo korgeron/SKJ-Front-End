@@ -8,8 +8,13 @@ export const About = () =>{
 
             <div className={'content-container'}>
                 <Navbar/>
-                <div>
-                    THIS IS OUR ABOUT US PAGE! THANKS FOR VIEWING :)
+                <div className={'content'}>
+                    <div className={'skj-title'}>
+                        Southern Karate Jiu-Jitsu
+                    </div>
+                    <div className={'skj-moto'}>
+                        We are Instructors! We learn, we train and we implement! We are always learning, we are always being coached and we are always growing to teach our students the way!
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,6 +2,9 @@
     --levitate: 5vh;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 body {
     overflow-x: hidden;
@@ -24,22 +27,48 @@ body {
     image-rendering: pixelated;
 }
 
+.content-container {
+    margin-top: 6.4vh;
+    height: 90vh;
+    width: 72vw;
+    background: rgba(210, 180, 140, 0.32);
+    display: grid;
+    grid-template-areas:
+            'navbar'
+            'content';
+    grid-template-rows: 1fr 5fr;
+}
+
 .shelf-navbar {
+    grid-area: navbar;
     height: 30vh;
+    /*width: 90vw;*/
     background-image: url("../src/Images/japanese-shelf(transparent).png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     padding: 0 4vh 0 4vh;
 }
 
+.content{
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 0 1vw;
+}
+
+.content::-webkit-scrollbar{
+    display: none;
+}
+
 .nav-skj-logo{
     height: 12vh;
-    width: 15vw;
+    width: 10vw;
     background-image: url("../src/Images/japan-vase-skj-logo.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: contain;
     margin-bottom: 3.5vh;
 }
 
@@ -51,10 +80,11 @@ body {
 
 .nav-about-us{
     height: 9vh;
-    width: 12vw;
+    width: 10vw;
     background-image: url("../src/Images/about-us-cup(transparent-2).png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: contain;
     margin-bottom: 2.5vh;
 }
 
@@ -62,19 +92,6 @@ body {
 .nav-about-us:focus{
     cursor: pointer;
     margin-bottom: 5vh;
-}
-
-.content-container {
-    margin-top: 6.4vh;
-    height: 90vh;
-    width: 72vw;
-    background: rgba(210, 180, 140, 0.32);
-    overflow-y: scroll;
-
-}
-
-.content-container::-webkit-scrollbar{
-    display: none;
 }
 
 .product-card > img {
@@ -143,6 +160,17 @@ body {
 }
 
 
+.skj-title{
+    font-size: 6vw;
+    text-align: center;
+    font-family: 'Babylonica', cursive;
+}
+
+.skj-moto{
+    text-align: center;
+}
+
+
 @keyframes openRight {
     from {
         left: 0;
@@ -158,5 +186,16 @@ body {
     }
     to {
         right: -36%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .shelf-navbar{
+        display: none;
+    }
+
+    .skj-title{
+        font-size: 8vw;
     }
 }
