@@ -167,6 +167,7 @@ body {
 
 .skj-moto{
     text-align: center;
+    font-size: 1.5vw;
 }
 
 
@@ -196,5 +197,10 @@ body {
 
     .skj-title{
         font-size: 8vw;
+    }
+
+    /*TODO: NEED TO ADJUST FONT SIZE FOR MOBILE SCREEN SIZE*/
+    .skj-moto{
+
     }
 }
