@@ -165,7 +165,7 @@ body {
     font-family: 'Babylonica', cursive;
 }
 
-.skj-moto{
+.skj-motto{
     text-align: center;
     font-size: 1.5vw;
 }
@@ -199,8 +199,7 @@ body {
         font-size: 8vw;
     }
 
-    /*TODO: NEED TO ADJUST FONT SIZE FOR MOBILE SCREEN SIZE*/
-    .skj-moto{
-
+    .skj-motto{
+        font-size: 4vw;
     }
 }
