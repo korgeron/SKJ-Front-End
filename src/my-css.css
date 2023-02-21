@@ -160,14 +160,21 @@ body {
 }
 
 .skj-title{
-    font-size: 6vw;
+    font-size: 6vh;
     text-align: center;
     font-family: 'Babylonica', cursive;
 }
 
 .skj-motto{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vh;
+    padding: 1em;
+    color: darkblue;
+}
+
+.about-us{
+    padding: 1em;
+    font-size: 2vh;
 }
 
 
@@ -193,13 +200,5 @@ body {
 @media screen and (max-width: 768px) {
     .shelf-navbar{
         display: none;
-    }
-
-    .skj-title{
-        font-size: 8vw;
-    }
-
-    .skj-motto{
-        font-size: 4vw;
     }
 }
