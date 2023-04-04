@@ -8,7 +8,7 @@ export const About = () => {
 
             <div className={'content-container'}>
                 <Navbar/>
-                <div className={'content'}>
+
                     <div className={'skj-title'}>
                         Southern Karate Jiu-Jitsu
                     </div>
@@ -44,7 +44,7 @@ export const About = () => {
                         also
                         strive to give our best to those around us.
                     </div>
-                </div>
+
             </div>
         </div>
     )

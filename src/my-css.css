@@ -17,8 +17,6 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    /*flex-direction: column;*/
-    /*align-items: center;*/
     justify-content: center;
 
     background-image: url("../src/Images/japanese-door(open).png");
@@ -32,17 +30,12 @@ body {
     height: 90vh;
     width: 72vw;
     background: rgba(210, 180, 140, 0.32);
-    display: grid;
-    grid-template-areas:
-            'navbar'
-            'content';
-    grid-template-rows: 1fr 5fr;
+    overflow-y: scroll;
 }
 
 .shelf-navbar {
     grid-area: navbar;
     height: 30vh;
-    /*width: 90vw;*/
     background-image: url("../src/Images/japanese-shelf(transparent).png");
     background-repeat: no-repeat;
     background-position: center;
@@ -52,13 +45,7 @@ body {
     padding: 0 4vh 0 4vh;
 }
 
-.content{
-    grid-area: content;
-    overflow-y: scroll;
-    padding: 0 1vw;
-}
-
-.content::-webkit-scrollbar{
+.content-container::-webkit-scrollbar{
     display: none;
 }
 
